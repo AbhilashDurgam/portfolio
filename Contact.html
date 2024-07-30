@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./nav.css">
+    <style>
+        body {
+    /* height: 100vh; */
+    background: linear-gradient(black 20%, rgb(102, 102, 102));
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            justify-content: center;
+            /* align-items: center; */
+            /* border: 1px solid; */
+            padding: 7%;
+            background: linear-gradient(#9fb6c3,#3e5172);
+            border-radius: 5%;
+        }
+        input,textarea{
+            background-color: white !important;
+            color: red !important;
+        }
+        label{
+            color: rgb(0, 0, 0);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .send{
+            color: black;
+            width: 150px;
+            margin: auto;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 20px;
+            background: linear-gradient(#10898d,#02474d);
+            color: white;
+            font-size: larger;
+            font-weight: lighter;
+        }
+        iframe{
+            border-radius: 10px;
+        }
+        .sec{
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+  <!-- navbar -->
+    <section class="nav">
+        <nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand name " href="./index.html">ABHILASH DURGAM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse titles" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"> 
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./Skils.html">Skils</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./Projects.html" tabindex="-1" aria-disabled="true">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./Certify.html" tabindex="-1" aria-disabled="true">Certifications</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="./About.html">About</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./Contact.html" tabindex="-1" aria-disabled="true" id="border">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </nav>
+  </section>
+  <!-- main  -->
+    <section class="sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 order-md-1 order-2">
+                        <form id="contactForm">
+                            <label for="name">Name:</label>
+                            <input type="text"  class="form-control" id="name" placeholder="Enter your name" name="name" required><br>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" readonly class="form-control" id="email" placeholder="Enter your email" name="email" required><br>
+                            
+                            <label for="email">Ph Number:</label>
+                            <input type="text" readonly class="form-control" id="email" placeholder="Enter your Modile number" name="number" required><br>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" readonly class="form-control" name="message" placeholder="Enter a text to inform" required></textarea><br>
+                            
+                            <button type="submit" class="send">Send</button>
+                        </form>
+                </div>
+                <div class="col-12 col-md-6 order-md-2 order-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61263.80511727938!2d80.393318802316!3d16.323566604512315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a755cb1787785%3A0x9f7999dd90f1e694!2sGuntur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1721754760865!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <script src="./Contact.js"></script>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

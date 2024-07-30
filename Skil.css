@@ -1,0 +1,63 @@
+
+body {
+/* height: 100vh; */
+    background: linear-gradient(black 20%,rgb(102, 102, 102) );
+    /* background: linear-gradient(rgb(102, 102, 102) 20%,black); */
+background-color: black;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid; */
+}
+.sec{
+    margin-top: 5%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn1{
+    padding: 20px;
+    background: linear-gradient(#caad9f,#5C4033);
+    border: none;
+    border-radius: 10px;
+    height: 70px;
+    width: 150PX;
+    color: black;
+    font-weight: bold;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.btn1:hover{
+   box-shadow: 0 0 20px 5px white;
+}
+img{
+    height: 100px;
+    width: 200px;
+}
+#js{
+    height: 120px;
+    width: 100px;
+}
+#rjs{
+    height: 120px;
+    width: 100px;
+}
+#python{
+    height: 120px;
+    width: 100px;
+}
+#sql{
+    height: auto;
+    width: 210px;
+}
+.flask{
+    height: 50px;
+    width: 200px;
+}
